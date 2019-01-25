@@ -1,0 +1,28 @@
+#list {
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10%;
+}
+
+.card {
+  flex-basis: 100%;
+  min-height: 300px;
+}
+
+.image {
+  max-width: 240px;
+}
+
+@media (min-width: 780px) {
+  .card {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .card {
+    flex-basis: 33%;
+  }
+}
